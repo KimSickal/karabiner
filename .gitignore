@@ -1,0 +1,8 @@
+.vscode/
+.DS_Store
+*.pyc
+__pycache__/
+
+ignore/
+
+automatic_backups/
