@@ -2,55 +2,53 @@
   "title": "Mouse 3/4/5 to websurfing",
   "rules": [
     {
-      "description": "Mouse 4 Switch Left",
+      "description": "Change button4, 5 to backward, forward if safari",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "pointing_button": "button4"
+            "pointing_button": "button4",
+            "modifiers": {
+              "optional": ["caps_lock"]
+            }
           },
           "to": [
             {
-              "repeat": false,
-              "key_code": "left_arrow",
-              "modifiers": ["left_control"]
+              "key_code": "open_bracket",
+              "modifiers": "left_command"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.apple\\.finder$",
+                "^com\\.apple\\.safari$"
+              ]
             }
           ]
-        }
-      ]
-    },
-    {
-      "description": "Mouse 5 Switch Right",
-      "manipulators": [
+        },
         {
           "type": "basic",
           "from": {
-            "pointing_button": "button5"
-          },
-          "to": [
-            {
-              "repeat": false,
-              "key_code": "right_arrow",
-              "modifiers": ["left_control"]
+            "pointing_button": "button5",
+            "modifiers": {
+              "optional": ["caps_lock"]
             }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "Mouse 3 Desktop Switcher",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "pointing_button": "button3"
           },
           "to": [
             {
-              "repeat": false,
-              "key_code": "up_arrow",
-              "modifiers": ["left_control"],
-              "lazy": false
+              "key_code": "close_bracket",
+              "modifiers": "left_command"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.apple\\.finder$",
+                "^com\\.apple\\.safari$"
+              ]
             }
           ]
         }
