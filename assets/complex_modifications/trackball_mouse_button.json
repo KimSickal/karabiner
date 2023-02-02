@@ -2,7 +2,7 @@
   "title": "Mouse 3/4/5 to websurfing",
   "rules": [
     {
-      "description": "Change button4, 5 to backward, forward if safari",
+      "description": "Change button4, 5 to backward, forward if Safari",
       "manipulators": [
         {
           "type": "basic",
@@ -23,7 +23,7 @@
               "type": "frontmost_application_if",
               "bundle_identifiers": [
                 "^com\\.apple\\.finder$",
-                "^com\\.apple\\.safari$"
+                "^com\\.apple\\.Safari$"
               ]
             }
           ]
@@ -47,7 +47,7 @@
               "type": "frontmost_application_if",
               "bundle_identifiers": [
                 "^com\\.apple\\.finder$",
-                "^com\\.apple\\.safari$"
+                "^com\\.apple\\.Safari$"
               ]
             }
           ]
