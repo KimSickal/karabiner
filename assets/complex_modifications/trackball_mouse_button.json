@@ -12,7 +12,7 @@
               "optional": ["caps_lock"]
             }
           },
-          "to": [
+          "to_if_alone": [
             {
               "key_code": "open_bracket",
               "modifiers": "left_command"
@@ -36,7 +36,7 @@
               "optional": ["caps_lock"]
             }
           },
-          "to": [
+          "to_if_alone": [
             {
               "key_code": "close_bracket",
               "modifiers": "left_command"

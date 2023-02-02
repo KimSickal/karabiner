@@ -38,7 +38,7 @@
                                     },
                                     "pointing_button": "button4"
                                 },
-                                "to": [
+                                "to_if_alone": [
                                     {
                                         "key_code": "open_bracket",
                                         "modifiers": "left_command"
@@ -64,7 +64,7 @@
                                     },
                                     "pointing_button": "button5"
                                 },
-                                "to": [
+                                "to_if_alone": [
                                     {
                                         "key_code": "close_bracket",
                                         "modifiers": "left_command"
