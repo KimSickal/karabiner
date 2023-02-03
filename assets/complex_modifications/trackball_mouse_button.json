@@ -53,6 +53,49 @@
           ]
         }
       ]
+    },
+    {
+      "description": "Button3 to flag on",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "pointing_button": "button3",
+            "modifiers": {
+              "optional": ["any"]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "mouseModifier",
+                "value": 1
+              }
+            },
+            {
+              "pointing_button": "button3"
+            }
+          ],
+          "to_delayed_action": {
+            "to_if_invoked": [
+              {
+                "set_variable": {
+                  "name": "mouseModifier",
+                  "value": 0
+                }
+              }
+            ],
+            "to_if_canceled": [
+              {
+                "set_variable": {
+                  "name": "mouseModifier",
+                  "value": 0
+                }
+              }
+            ]
+          }
+        }
+      ]
     }
   ]
 }
