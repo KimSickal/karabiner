@@ -55,8 +55,30 @@
       ]
     },
     {
-      "description": "Button3 to flag on",
+      "description": "Button3 to flag on, double click to close",
       "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "pointing_button": "button3",
+            "modifiers": {
+              "optional": ["any"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "w",
+              "modifiers": "left_command"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "mouseModifier",
+              "value": 1
+            }
+          ]
+        },
         {
           "type": "basic",
           "from": {
