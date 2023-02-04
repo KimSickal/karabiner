@@ -74,7 +74,7 @@
           "conditions": [
             {
               "type": "variable_if",
-              "name": "mouseModifier",
+              "name": "mouseDelayedModifier",
               "value": 1
             }
           ]
@@ -95,6 +95,12 @@
               }
             },
             {
+              "set_variable": {
+                "name": "mouseDelayedModifier",
+                "value": 1
+              }
+            },
+            {
               "pointing_button": "button3"
             }
           ],
@@ -102,7 +108,7 @@
             "to_if_invoked": [
               {
                 "set_variable": {
-                  "name": "mouseModifier",
+                  "name": "mouseDelayedModifier",
                   "value": 0
                 }
               }
@@ -110,12 +116,20 @@
             "to_if_canceled": [
               {
                 "set_variable": {
-                  "name": "mouseModifier",
+                  "name": "mouseDelayedModifier",
                   "value": 0
                 }
               }
             ]
-          }
+          },
+          "to_after_key_up": [
+            {
+              "set_variable": {
+                "name": "mouseModifier",
+                "value": 0
+              }
+            }
+          ]
         }
       ]
     },
@@ -144,7 +158,6 @@
             }
           ]
         },
-
         {
           "type": "basic",
           "from": {
