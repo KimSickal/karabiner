@@ -134,12 +134,12 @@
       ]
     },
     {
-      "description": "Button3+4, 3+5 to switch",
+      "description": "Button3+1, 3+2 to switch",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "pointing_button": "button4",
+            "pointing_button": "button1",
             "modifiers": {
               "optional": ["any"]
             }
@@ -161,7 +161,7 @@
         {
           "type": "basic",
           "from": {
-            "pointing_button": "button5",
+            "pointing_button": "button2",
             "modifiers": {
               "optional": ["any"]
             }
