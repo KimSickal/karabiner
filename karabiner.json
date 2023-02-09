@@ -18,32 +18,8 @@
                 },
                 "rules": [
                     {
-                        "description": "Button3 to flag on, double click to close",
+                        "description": "Button3 to flag on",
                         "manipulators": [
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "mouseDelayedModifier",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
-                                "from": {
-                                    "modifiers": {
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    },
-                                    "pointing_button": "button3"
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "w",
-                                        "modifiers": "left_command"
-                                    }
-                                ],
-                                "type": "basic"
-                            },
                             {
                                 "from": {
                                     "modifiers": {
@@ -57,12 +33,6 @@
                                     {
                                         "set_variable": {
                                             "name": "mouseModifier",
-                                            "value": 1
-                                        }
-                                    },
-                                    {
-                                        "set_variable": {
-                                            "name": "mouseDelayedModifier",
                                             "value": 1
                                         }
                                     },
@@ -78,24 +48,6 @@
                                         }
                                     }
                                 ],
-                                "to_delayed_action": {
-                                    "to_if_canceled": [
-                                        {
-                                            "set_variable": {
-                                                "name": "mouseDelayedModifier",
-                                                "value": 0
-                                            }
-                                        }
-                                    ],
-                                    "to_if_invoked": [
-                                        {
-                                            "set_variable": {
-                                                "name": "mouseDelayedModifier",
-                                                "value": 0
-                                            }
-                                        }
-                                    ]
-                                },
                                 "type": "basic"
                             }
                         ]
@@ -150,41 +102,11 @@
                                     }
                                 ],
                                 "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "mouseModifier",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
-                                "from": {
-                                    "modifiers": {
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    },
-                                    "simultaneous": [
-                                        {
-                                            "pointing_button": "button1"
-                                        },
-                                        {
-                                            "pointing_button": "button2"
-                                        }
-                                    ]
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "mission_control"
-                                    }
-                                ],
-                                "type": "basic"
                             }
                         ]
                     },
                     {
-                        "description": "Button3+4, 3+5 to arrow",
+                        "description": "Button3+5 to right, 3+4 to close",
                         "manipulators": [
                             {
                                 "conditions": [
@@ -204,7 +126,8 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "left_arrow"
+                                        "key_code": "w",
+                                        "modifiers": "left_command"
                                     }
                                 ],
                                 "type": "basic"

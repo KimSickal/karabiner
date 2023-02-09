@@ -55,30 +55,8 @@
       ]
     },
     {
-      "description": "Button3 to flag on, double click to close",
+      "description": "Button3 to flag on",
       "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "pointing_button": "button3",
-            "modifiers": {
-              "optional": ["any"]
-            }
-          },
-          "to": [
-            {
-              "key_code": "w",
-              "modifiers": "left_command"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "variable_if",
-              "name": "mouseDelayedModifier",
-              "value": 1
-            }
-          ]
-        },
         {
           "type": "basic",
           "from": {
@@ -95,33 +73,9 @@
               }
             },
             {
-              "set_variable": {
-                "name": "mouseDelayedModifier",
-                "value": 1
-              }
-            },
-            {
               "pointing_button": "button3"
             }
           ],
-          "to_delayed_action": {
-            "to_if_invoked": [
-              {
-                "set_variable": {
-                  "name": "mouseDelayedModifier",
-                  "value": 0
-                }
-              }
-            ],
-            "to_if_canceled": [
-              {
-                "set_variable": {
-                  "name": "mouseDelayedModifier",
-                  "value": 0
-                }
-              }
-            ]
-          },
           "to_after_key_up": [
             {
               "set_variable": {
@@ -183,7 +137,7 @@
       ]
     },
     {
-      "description": "Button3+4, 3+5 to arrow",
+      "description": "Button3+5 to right, 3+4 to close",
       "manipulators": [
         {
           "type": "basic",
@@ -195,7 +149,8 @@
           },
           "to": [
             {
-              "key_code": "left_arrow"
+              "key_code": "w",
+              "modifiers": "left_command"
             }
           ],
           "conditions": [
