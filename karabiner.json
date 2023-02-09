@@ -250,7 +250,7 @@
                                 "from": {
                                     "modifiers": {
                                         "optional": [
-                                            "caps_lock"
+                                            "left_shift"
                                         ]
                                     },
                                     "pointing_button": "button4"
@@ -276,7 +276,7 @@
                                 "from": {
                                     "modifiers": {
                                         "optional": [
-                                            "caps_lock"
+                                            "left_shift"
                                         ]
                                     },
                                     "pointing_button": "button5"

@@ -9,7 +9,7 @@
           "from": {
             "pointing_button": "button4",
             "modifiers": {
-              "optional": ["caps_lock"]
+              "optional": ["left_shift"]
             }
           },
           "to_if_alone": [
@@ -33,7 +33,7 @@
           "from": {
             "pointing_button": "button5",
             "modifiers": {
-              "optional": ["caps_lock"]
+              "optional": ["left_shift"]
             }
           },
           "to_if_alone": [
