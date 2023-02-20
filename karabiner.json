@@ -213,31 +213,6 @@
                                 "type": "basic"
                             }
                         ]
-                    },
-                    {
-                        "description": "Short click for USB-C, long click for HDMI",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "application"
-                                },
-                                "parameters": {
-                                    "basic.to_if_alone_timeout_milliseconds": 1000,
-                                    "basic.to_if_held_down_threshold_milliseconds": 1000
-                                },
-                                "to_if_alone": [
-                                    {
-                                        "shell_command": "open -a 'Safari.app'"
-                                    }
-                                ],
-                                "to_if_held_down": [
-                                    {
-                                        "shell_command": "open -a 'Safari.app'"
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
                     }
                 ]
             },

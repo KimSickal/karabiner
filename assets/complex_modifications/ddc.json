@@ -15,12 +15,12 @@
           },
           "to_if_alone": [
             {
-              "shell_command": "open -a 'Safari.app'"
+              "shell_command": "code ."
             }
           ],
           "to_if_held_down": [
             {
-              "shell_command": "open -a 'Safari.app'"
+              "shell_command": "open ~/Users/kimsickal/.config/karabiner/assets/scripts/ddc_hdmi.sh"
             }
           ]
         }
